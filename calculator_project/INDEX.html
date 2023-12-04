@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="STYLES.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" class="form-control" readonly>
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="btn btn-danger">AC</button>
+            <button onclick="removeLastDigit()" class="btn btn-secondary">←</button>
+            <button onclick="appendToDisplay('%')" class="btn btn-secondary">%</button>
+            <button onclick="appendToDisplay('&sup2;')" class="btn btn-secondary">x&sup2;</button>
+            <button onclick="appendToDisplay('/')" class="btn btn-secondary">/</button>
+            <button onclick="appendToDisplay('7')" class="btn btn-light">7</button>
+            <button onclick="appendToDisplay('8')" class="btn btn-light">8</button>
+            <button onclick="appendToDisplay('9')" class="btn btn-light">9</button>
+            <button onclick="appendToDisplay('*')" class="btn btn-secondary">*</button>
+            <button onclick="appendToDisplay('4')" class="btn btn-light">4</button>
+            <button onclick="appendToDisplay('5')" class="btn btn-light">5</button>
+            <button onclick="appendToDisplay('6')" class="btn btn-light">6</button>
+            <button onclick="appendToDisplay('-')" class="btn btn-secondary">-</button>
+            <button onclick="appendToDisplay('1')" class="btn btn-light">1</button>
+            <button onclick="appendToDisplay('2')" class="btn btn-light">2</button>
+            <button onclick="appendToDisplay('3')" class="btn btn-light">3</button>
+            <button onclick="appendToDisplay('+')" class="btn btn-secondary">+</button>
+            <button onclick="appendToDisplay('0')" class="btn btn-light">0</button>
+            <button onclick="appendToDisplay('.')" class="btn btn-light">.</button>
+            <button onclick="calculateResult()" class="btn btn-success">=</button>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+</html>
+
+
